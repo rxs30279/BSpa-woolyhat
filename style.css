@@ -6,6 +6,7 @@
 }
 
 .outer-container {
+    position:relative;
     width: 100%;
     height: 100vh;
     display:flex;
@@ -15,11 +16,13 @@
 }
 
 .sidebar {
+    position: fixed;
     width: 5%;
     display:flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 1%;
+    margin-top: 38vh;
 }
 .sidebar img {
     padding: 10px;
@@ -37,16 +40,25 @@
     background-position: bottom right -50px;
 }
 
+.wrapper{
+  position: fixed;
+  width: 90%;
+  top: 0;
+  z-index: 1;
+}
 .navbar {
+    width:100%;
     display:flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding-top: 40px; 
+    margin-left: 8%;
 }
 
 .navbar ul {
     display:flex;
     list-style-type: none;
     padding-top:  5px;
+    margin-left: 10%;
 }
 .navbar ul a{
     text-decoration: none;
@@ -58,24 +70,16 @@
     margin-right: 10vw;
 }
 
-.cart {
-    margin-left: auto;
-    padding-right: 100px;
-    width: 20px;
-}
-
-
 .main-text {
-    margin-left: 10vw;
+    margin-left: 15vw;
     width: 40%;
     height: 30%;
-    margin-top: 10vh;
+    margin-top: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
 }
-.button {
-    
+.button {  
     border: none;
     background-image: radial-gradient(13rem circle at bottom left,#9DC3FD ,#F48BCF);
     color: white;
@@ -88,7 +92,7 @@
     border-radius: 10px;
   }
   .pretty-text {
-    /* max-width:80%; */
+   
     padding-top: 5vh;
     font-size: 4rem;
    
@@ -125,6 +129,13 @@
   .forward-button img {
     height: 60px;
     width:  60px;
+  }
+
+  .additional-for-scroll {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 100% 100%;
   }
 
 
