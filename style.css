@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.outer-container {
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.sidebar {
+    width: 5%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1%;
+}
+.sidebar img {
+    padding: 10px;
+    max-height: 7vh;
+    max-width: 3vw;
+}
+
+.inner-container {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(images/img.png);
+    background-repeat: no-repeat;
+    background-size: auto 90%;
+    background-position: bottom right -50px;
+}
+
+.navbar {
+    display:flex;
+    justify-content: flex-start;
+    padding-top: 40px; 
+}
+
+.navbar ul {
+    display:flex;
+    list-style-type: none;
+    padding-top:  5px;
+}
+.navbar ul a{
+    text-decoration: none;
+    margin-right: 3vw;
+    font-size: 25px;  
+}
+.logo img {
+    width: 250px;
+    margin-right: 10vw;
+}
+
+.cart {
+    margin-left: auto;
+    padding-right: 100px;
+    width: 20px;
+}
+
+
+.main-text {
+    margin-left: 10vw;
+    width: 40%;
+    height: 30%;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+.button {
+    
+    border: none;
+    background-image: radial-gradient(13rem circle at bottom left,#9DC3FD ,#F48BCF);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: 30%;
+    border-radius: 10px;
+  }
+  .pretty-text {
+    /* max-width:80%; */
+    padding-top: 5vh;
+    font-size: 4rem;
+   
+  }
+  .heat-text {
+    padding-top: 3vh;
+    font-size: 3rem;
+    font-weight: 100;
+    color: rgb(120, 146, 168)
+
+  }
+
+  .button-pair {
+    margin-left: 5vw;
+    padding-top: 3vh;
+  }
+
+  .back-button {
+    background:none;
+    border: none;
+  
+  }
+  .back-button img {
+    height: 60px;
+    width:  60px;
+  }
+
+  .forward-button {
+    margin-left: 5vw;;
+    background:none;
+    border: none;
+  }
+
+  .forward-button img {
+    height: 60px;
+    width:  60px;
+  }
+
+
+@media (max-width: 1376px) {
+    .inner-container {
+    background-size: 60% auto ;
+    }
+    .sidebar img {
+        max-height: 14vh;
+        max-width: 6vw;
+    }
+}
